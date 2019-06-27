@@ -1,0 +1,2 @@
+# offer
+basic knowledeg
