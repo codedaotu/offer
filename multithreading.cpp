@@ -22,6 +22,8 @@ int main()
 {
 	thread task01(thread01);
 	thread task02(thread02);
+	//join函数会阻塞主流程，所以子线程都执行完成之后才继续执行主线程。可以使用detach将子线程从主流程中分离，独立运行，不会阻塞主线程。
+
 	task01.join();
 	task02.join();
 
