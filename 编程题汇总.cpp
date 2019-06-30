@@ -137,7 +137,6 @@ float test_sqrt(float y)
 //	int y=sqrt(-2*log(v1))*cos(2*pi*v2);
 //}
 
-
 int main()
 {
 	vector<int> a={40,2,90,707,0,88,9,1};
