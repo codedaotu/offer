@@ -33,10 +33,10 @@ int partiton(int a[],int left,int right)
 	{
 		while(left<right&&key>=a[left])
 			left++;
-		swap(key,a[left]);
+		swap(a[right],a[left]);
 		while(left<right&&key<=a[right])
 			right--;
-		swap(key,a[right]);
+		swap(a[left],a[right]);
 	}
 	return right;
 }
