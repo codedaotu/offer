@@ -58,14 +58,14 @@ int bag_multi(int n,int nums[],int capacity,int vals[],int weights[])
 	int i=0,j=0,t=0;
 	for( i =0;i<n;i++)
 	{
-		for ( j = 1; j <= nums[i]; j=j*2)
+		for ( j = 1; j <= nums[i] ; j=j*2)
 		{
 			val[t]=j*vals[i];
 			we[t]=j*weights[i];
 			nums[i]=nums[i]-j;
 			t++;
 		}
-		//若有剩余。。。。
+		//若有剩余
 		if(nums[i]>0)
 		{
 			val[t]=nums[i]*vals[i];
