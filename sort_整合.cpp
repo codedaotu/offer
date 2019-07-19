@@ -48,10 +48,10 @@ void q_sort(int a[],int left,int right)
 		int mid=partiton(a,left,right);
 		q_sort(a,left,mid-1);
 		q_sort(a,mid+1,right);
-	}p(int a[],int partent,int end)
+	}
 	
 }
-void adjust_hea
+void adjust_heap(int a[],int partent,int end)
 {
 	for (int i = 2*partent+1; i<end; i=i*2+1)
 	{
