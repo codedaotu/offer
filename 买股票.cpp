@@ -58,7 +58,7 @@ dp0 不变。但是dp1是两天前买的，不是昨天买的
 	return dp0;
 }
 
-int stock_freeze_fee(vector<int> &prices,int fee)
+int stock_fee(vector<int> &prices,int fee)
 '''
 你可以无限次地完成交易，但是你每次交易都需要付手续费。
 如果你已经购买了一个股票，在卖出它之前你就不能再继续购买股票了。

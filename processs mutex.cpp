@@ -1,4 +1,4 @@
-'
+/*
 多个线程同时对同一变量进行操作的时候，如果不对变量做一些保护处理，有可能导致处理结果异常
 1、内核对象互斥体（Mutex）的工作机理，WaitForSingleObject函数的用法，这些可以从MSDN获取详情； 
 2、当两个或更多线程需要同时访问一个共享资源时，系统需要使用同步机制来确保一次只有一个线程使用该资源。
@@ -35,7 +35,7 @@ int main()
 	task02.detach();
 	system("pause");
 }
-'
+*/
 #include <iostream>
 #include <thread>
 #include <Windows.h>
@@ -67,9 +67,13 @@ void thread02()
 }
 int main()
 {
-	thread task01(thread01);
+	/*thread task01(thread01);
 	thread task02(thread02);
 	task01.detach();
 	task02.detach();
-	system("pause");
+	*/
+	unsigned long a=0x01<<2;
+	cout<<a;
+	return 0;
+	//system("pause");
 }
