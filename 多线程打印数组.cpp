@@ -7,10 +7,7 @@ using namespace std;
 mutex mu;
 vector<int> a{0,1,2,3,4,5,6,7,8,9};
 volatile int k=1;
-int num=9;
-void task1()
-{
-	while(num>=0)
+int num=9;`  
 	{
 		mu.lock(); //同步数据锁
 		cout <<"t1 "<<a[num] << endl;
